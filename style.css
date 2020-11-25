@@ -1,38 +1,53 @@
-@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600&display=swap');
+@font-face {
+    font-family: 'Suisse BP Int\'l';
+    src: url('https://glitter-online.org/lewagon/SuisseBPIntl-Regular.eot');
+    src: url('https://glitter-online.org/lewagon/SuisseBPIntl-Regular.eot?#iefix') format('embedded-opentype'),
+        url('https://glitter-online.org/lewagon/SuisseBPIntl-Regular.woff2') format('woff2'),
+        url('https://glitter-online.org/lewagon/SuisseBPIntl-Regular.woff') format('woff'),
+        url('https://glitter-online.org/lewagon/SuisseBPIntl-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
 
 * { padding: 0; margin: 0; }
 
-html {
-  box-sizing: border-box;
-}
-*, *:before, *:after {
-  box-sizing: inherit;
-}
+html { box-sizing: border-box }
+
+*, *:before, *:after { box-sizing: inherit; }
 
 body {
-  font-family: 'Titillium Web', 'Arial', sans-serif;
-  font-size: 48px;
-  font-weight: 400;
+  font-family: 'Suisse BP Int\'l';
+  font-weight: normal;
+  font-style: normal;
   color: #000;
-  background-color: #fef6f0;
+  background-color: #fff;
 }
 
 h1, h2 {
-  color: #ea3323;
-  font-weight: 600;
+  font-family: 'Suisse BP Int\'l';
+  font-weight: normal;
+  font-style: normal;
+  color: #000;
+  margin-bottom: 24px;
 }
 
 h1 {
-  font-size: 32px;
-}
-
-h2 {
   font-size: 24px;
 }
 
+h2 {
+  font-size: 16px;
+  margin-bottom: 0;
+  color: #fff;
+  margin-right: 12px;
+}
+
 p {
-  width: 80%;
-  margin: 0 auto 8px auto;
+  width: 70%;
+  font-size: 52px;
+  line-height: 1.2;
+  margin-bottom: 12px;
 }
 
 a {
@@ -45,41 +60,50 @@ a:hover {
 }
 
 .container {
-  width: 600px;
-  margin: 50px auto;
+  width: 100vw;
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
 
 .card {
-  background-color: #fff;
-  margin: 20px 0;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 5px 5px 10px rgba(240, 240, 240, 0.5)
+  margin: 0 0 20px 20px;
+}
+
+.footer {
+  background-color: #000;
+  padding: 6px 20px 12px 20px;
 }
 
 .img-cirle {
-  width: 100px;
-  height: 100px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   margin: 10px 0;
 }
 
-.text-center {
-  text-align: center;
+.border-btm-black {
+  width: 100vw;
+  border-bottom: 2px solid #000;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  margin-left: -20px;
+  margin-right: -20px;
+
 }
 
-.btn-red {
+.btn-black {
   display: inline-block;
-  border: 1px solid #ea3323;
-  padding: 8px 16px;
+  border: 1px solid #000;
+  padding: 12px 32px;
   margin: 16px 0;
-  border-radius: 4px;
-  color: #ea3323;
+  color: #000;
+  font-size: 16px;
   background-color: #fff;
 }
 
-.btn-red:hover {
-  background-color: #ea3323;
+.btn-black:hover {
+  background-color: #000;
   color: #fff;
 }
 
@@ -93,16 +117,16 @@ li {
 }
 
 li a {
-  margin: 0 8px;
+  margin-left: 4px;
 }
 
 .fab {
-  font-size: 24px;
-  color: rgb(200, 200, 200);
+  font-size: 16px;
+  color: #fff;
 }
 
 .fab:hover {
-  color: #ea3323;
+  color: rgb(60, 60, 60);
 }
 
 @media (max-width: 960px) {
